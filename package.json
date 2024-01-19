@@ -1,0 +1,69 @@
+{
+  "name": "birthday-zodiac-ranges",
+  "version": "1.0.0",
+  "description": "This simple utility allows you to explore all possible birthday date ranges and their associated zodiac animals based on age and zodiac sign.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "nodemon",
+    "build": "tsup"
+  },
+  "keywords": [
+    "birthday",
+    "zodiac",
+    "astrology",
+    "date ranges",
+    "zodiac animals",
+    "celestial",
+    "horoscope",
+    "star signs",
+    "astrological",
+    "birth periods"
+  ],
+  "author": "RedRosh",
+  "license": "MIT",
+  "homepage": "https://github.com/RedRosh/birthday-zodiac-ranges",
+  "bugs": {
+    "url": "https://github.com/RedRosh/birthday-zodiac-ranges/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RedRosh/birthday-zodiac-ranges.git"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "tsup": "^8.0.1",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "date-chinese": "^2.1.4",
+    "zodiac-signs": "^1.4.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "format": [
+      "cjs",
+      "esm"
+    ],
+    "dts": true,
+    "splitting": false,
+    "sourcemap": true,
+    "clean": true
+  }
+}
