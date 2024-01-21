@@ -7,10 +7,21 @@ import {
 
 const getBirthdayZodiacRanges = (
   age: number,
-  starSign: string
+  starSign: string = ""
 ): BirthdayZodiacRange[] => {
-  const sign: Sign = getSignByName(starSign);
-  const birthDateRanges: DateRange[] = getBirthDateRange(age, sign);
+  let birthDateRanges: DateRange[];
+
+  const sign: Sign = starSign
+    ? getSignByName(starSign)
+    : {
+        name: "unknown",
+        stone: "unknown",
+        symbol: "unknown",
+        element: "unknown",
+        dateMin: new Date(Date.UTC(new Date().getFullYear(), 0, 1)),
+        dateMax: new Date(Date.UTC(new Date().getFullYear(), 11, 31)),
+      };
+  birthDateRanges = getBirthDateRange(age, sign);
 
   const birthdayZodiacRange: BirthdayZodiacRange[] = [];
 
