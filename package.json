@@ -24,6 +24,10 @@
     "astrological",
     "birth periods"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "tag": "latest"
+  },
   "author": "RedRosh",
   "license": "MIT",
   "homepage": "https://github.com/RedRosh/birthday-zodiac-ranges",
@@ -35,8 +39,11 @@
     "url": "git+https://github.com/RedRosh/birthday-zodiac-ranges.git"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
     "cz-conventional-changelog": "^3.3.0",
     "nodemon": "^2.0.20",
+    "semantic-release": "^23.0.0",
     "ts-node": "^10.9.1",
     "tsup": "^8.0.1",
     "typescript": "^4.8.4"
