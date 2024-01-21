@@ -41,6 +41,6 @@
     ]
   ],
   "dryRun": false,
-  "ci": false,
+  "ci": true,
   "debug": false
 }
