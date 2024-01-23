@@ -3,6 +3,10 @@ import { ChineseZodiacAnimal, DateRange, Sign } from "../types";
 import zodiac from "zodiac-signs";
 import { chineseZodiacAnimals } from "../data/chinese-zodiac-animals";
 
+export const validateAge = (age: number): void => {
+  if (age <= 0) throw new Error("Age must be greater than zero");
+};
+
 export const getSignByName = (name: string): Sign => {
   const signInformation = zodiac().getSignByName(name);
   if (signInformation == -2) throw new Error("Invalid name: " + name);

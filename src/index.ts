@@ -3,12 +3,14 @@ import {
   getAnimalZodiacFromDateRange,
   getBirthDateRange,
   getSignByName,
+  validateAge,
 } from "./utils";
 
 const getBirthdayZodiacRanges = (
   age: number,
   starSign: string = ""
 ): BirthdayZodiacRange[] => {
+  validateAge(age);
   let birthDateRanges: DateRange[];
 
   const sign: Sign = starSign
