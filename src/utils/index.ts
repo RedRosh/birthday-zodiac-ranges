@@ -148,10 +148,9 @@ const getDateRanges = (sign: Sign): DateRange[] => {
     );
   } else {
     dateRanges.push({
-      dateMax: sign.dateMax,
-      dateMin: sign.dateMin,
+      dateMax: dateMax,
+      dateMin: dateMin,
     });
   }
-
   return dateRanges;
 };
