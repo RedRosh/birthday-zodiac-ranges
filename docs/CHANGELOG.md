@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/RedRosh/birthday-zodiac-ranges/compare/v1.1.1...v1.1.2) (2024-01-25)
+
+
+### Bug Fixes
+
+* **getbirthdaterange:** handle case when currentDate is between datemin and datemax ([7380dc4](https://github.com/RedRosh/birthday-zodiac-ranges/commit/7380dc4ce6e3b924e31d12e201ee8cbcab09ab80))
+
 ## [1.1.1](https://github.com/RedRosh/birthday-zodiac-ranges/compare/v1.1.0...v1.1.1) (2024-01-23)
 
 
